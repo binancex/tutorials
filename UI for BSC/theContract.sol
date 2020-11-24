@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0 ;
 contract theContract {
-    event messageWrite(string indexed _text);
+    event messageWrite(string _text);
     string message = "hello world";
     
     function writeMessage(string memory _message) public payable {

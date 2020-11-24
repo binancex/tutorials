@@ -39,7 +39,7 @@ function writeMessage(){
       console.log("Txn successful: "+receipt.status);
       //grab message from event
       var message = receipt.events.messageWrite.returnValues['_text'];
-      console.log(`new message is: ${web3.utils.hexToAscii(message)}`);
+      console.log(`new message is: ${message}`);
       $('#message').html(message);
     }
     else{
